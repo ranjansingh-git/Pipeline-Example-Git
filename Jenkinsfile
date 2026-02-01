@@ -9,7 +9,7 @@ pipeline {
         stage('compile') {
             steps {
             bat 'javac Test.java'
-            echo '${VERSION_NAME}'
+            'echo "${VERSION_NAME}"'
             }
         }
 
