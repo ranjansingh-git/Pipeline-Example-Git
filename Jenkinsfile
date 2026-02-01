@@ -13,20 +13,20 @@ pipeline {
             bat 'java Test'
             }
         }
+    }
 
-        post {
+    post {
 
-            always {
-                bat 'echo always'
-            }
+        always {
+            bat 'echo always'
+        }
 
-            success {
-                bat 'echo success'
-            }
+        success {
+            bat 'echo success'
+        }
 
-            failure {
-                bat 'echo failure'
-            }
+        failure {
+            bat 'echo failure'
         }
     }
 }
